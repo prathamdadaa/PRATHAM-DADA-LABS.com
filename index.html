@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PRATHAM DADA LABS</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Header / Navbar -->
+  <header class="navbar">
+    <a href="#" class="brand">
+      <img src="img/logo.png" alt="Pratham Dada Labs Logo" class="brand-logo" onerror="this.style.display='none'; document.getElementById('fallback-icon').style.display='flex';" />
+      <span id="fallback-icon" class="fallback-logo" style="display: none;">PD</span>
+      <span class="brand-name">PRATHAM DADA LABS</span>
+    </a>
+
+    <!-- Floating Pill Navigation -->
+    <nav class="nav-pill" id="navPill">
+      <a href="#projects" class="nav-link active">Projects</a>
+      <a href="#tools" class="nav-link">Tools</a>
+      <div class="dropdown">
+        <button class="nav-link dropdown-btn" id="servicesBtn">
+          Labs <span class="chevron">⌄</span>
+        </button>
+        <div class="dropdown-menu" id="servicesMenu">
+          <a href="#web">Web Apps</a>
+          <a href="#cpp">C++ &amp; Systems</a>
+          <a href="#ai">AI Experiments</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="nav-link dropdown-btn" id="aboutBtn">
+          About <span class="chevron">⌄</span>
+        </button>
+        <div class="dropdown-menu" id="aboutMenu">
+          <a href="#story">Our Story</a>
+          <a href="https://github.com/prathamdadaa" target="_blank">GitHub</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Right Auth Buttons -->
+    <div class="nav-actions">
+      <a href="https://github.com/prathamdadaa" target="_blank" class="btn-text">GitHub</a>
+      <button class="btn-outline" id="contactTrigger">Explore</button>
+    </div>
+
+    <!-- Mobile Menu Toggle -->
+    <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Menu">☰</button>
+  </header>
+
+  <!-- Hero Section -->
+  <main class="hero">
+    <div class="hero-badge">
+      <span class="badge-icon">🚀</span>
+      <span>Pratham Dada Labs</span>
+    </div>
+
+    <h1 class="hero-title">
+      Everything You Need to Build Tools and Scale Your Ideas
+    </h1>
+
+    <p class="hero-subtitle">
+      Explore open-source software, web utilities, and system experiments crafted to solve real-world problems from a single lab.
+    </p>
+
+    <div class="hero-cta">
+      <button class="btn-primary" id="startBtn">
+        <span>Start exploring labs</span>
+        <span class="arrow">›</span>
+      </button>
+    </div>
+
+    <!-- Bottom Dashboard Preview Card (Matches Screenshot Bottom) -->
+    <section class="preview-wrapper" id="projects">
+      <div class="preview-window">
+        <div class="preview-sidebar">
+          <div class="sidebar-header">
+            <span>Repositories</span>
+            <span>›</span>
+          </div>
+          <ul class="sidebar-list">
+            <li class="active" data-tab="web">Web Utilities</li>
+            <li data-tab="cpp">C++ Desktop Apps</li>
+            <li data-tab="audio">StudioMix Audio</li>
+            <li data-tab="community">DADA Community</li>
+          </ul>
+        </div>
+        <div class="preview-canvas">
+          <div class="canvas-card" id="previewContent">
+            <span class="status-pill">● Live on GitHub Pages</span>
+            <h3>Web Utilities &amp; Developer Tools</h3>
+            <p>Lightweight, zero-bloat browser tools built with clean HTML, CSS, and vanilla JavaScript.</p>
+            <div class="stats-row">
+              <div class="stat-box">
+                <strong>100+</strong>
+                <span>Code Builds</span>
+              </div>
+              <div class="stat-box">
+                <strong>Fast</strong>
+                <span>Static Architecture</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
